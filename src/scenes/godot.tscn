@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://wy75x8vwgq6r"]
 
 [ext_resource type="Script" path="res://src/scenes/godot.gd" id="1_5067l"]
-[ext_resource type="Texture2D" uid="uid://xb6fm0dka0ed" path="res://icon.svg" id="1_un4xy"]
+[ext_resource type="Texture2D" uid="uid://rhk4yf3i5ipn" path="res://icon.svg" id="1_un4xy"]
 
 [node name="Godot" type="Sprite2D"]
 texture = ExtResource("1_un4xy")
