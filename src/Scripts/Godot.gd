@@ -20,8 +20,7 @@ func _update_click_polygon() -> void:
 	OS.set_window_mouse_passthrough(click_polygon)
 
 
-# A simple function that changes the position of the Godot icon randomly and
-# prints "Clicked" when the icon is clicked by the mouse.
+# A simple function that changes the position of the Godot icon randomly.
 func _on_ClickArea_input_event(_viewport: Node, event: InputEvent,
 		_shape_idx: int) -> void:
 	if event is InputEventMouseButton and event.is_pressed():

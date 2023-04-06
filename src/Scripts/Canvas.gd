@@ -27,8 +27,9 @@ func _update_size_settings() -> void:
 	
 	
 func _update_transparency_settings() -> void:
-	# Enabling Per Pixel Transparency -> Allowed through code doesn't seem to
-	# work correctly. Make sure to enable it via the Project Settings menu.
+	# Enabling Per Pixel Transparency -> Allowed through code doesn't work, as
+	# the global variables ProjectSettings contain aren't updated when changed.
+	# Make sure to enable it via the Project Settings menu.
 #	ProjectSettings.set_setting("display/window/per_pixel_transparency/allowed", true)
 #	OS.set_window_per_pixel_transparency_enabled(true)
 	# You'll need to change this setting during runtime as it concerns the
