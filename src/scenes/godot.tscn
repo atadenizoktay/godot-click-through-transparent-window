@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://wy75x8vwgq6r"]
+
+[ext_resource type="Script" path="res://src/scenes/godot.gd" id="1_5067l"]
+[ext_resource type="Texture2D" uid="uid://xb6fm0dka0ed" path="res://icon.svg" id="1_un4xy"]
+
+[node name="Godot" type="Sprite2D"]
+texture = ExtResource("1_un4xy")
+script = ExtResource("1_5067l")
+
+[node name="ClickArea" type="Area2D" parent="."]
+
+[node name="ClickPolygon" type="CollisionPolygon2D" parent="ClickArea"]
+unique_name_in_owner = true
+polygon = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+
+[connection signal="input_event" from="ClickArea" to="." method="_on_click_area_input_event"]

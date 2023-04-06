@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8wp3527lqmah"]
+
+[ext_resource type="Script" path="res://src/scenes/canvas.gd" id="1_tw7p3"]
+[ext_resource type="PackedScene" uid="uid://wy75x8vwgq6r" path="res://src/scenes/godot.tscn" id="2_t2g44"]
+
+[node name="Canvas" type="Node2D"]
+script = ExtResource("1_tw7p3")
+
+[node name="Godot" parent="." instance=ExtResource("2_t2g44")]
+position = Vector2(960, 540)
