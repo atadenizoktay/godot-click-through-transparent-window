@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://src/Scripts/Godot.gd" type="Script" id=2]
+
+[node name="Godot" type="Sprite"]
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="ClickArea" type="Area2D" parent="."]
+
+[node name="ClickPolygon" type="CollisionPolygon2D" parent="ClickArea"]
+unique_name_in_owner = true
+polygon = PoolVector2Array( -32, -32, 32, -32, 32, 32, -32, 32 )
+
+[connection signal="input_event" from="ClickArea" to="." method="_on_ClickArea_input_event"]

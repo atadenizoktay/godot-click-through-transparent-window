@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Scenes/Godot.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/Scripts/Canvas.gd" type="Script" id=2]
+
+[node name="Canvas" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Godot" parent="." instance=ExtResource( 1 )]
+position = Vector2( 960, 540 )
